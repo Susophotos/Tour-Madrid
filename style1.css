@@ -1,0 +1,777 @@
+html {
+    padding: 0;
+}
+body {
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 0px;
+    padding: 0px;
+    font-family: 'Cinzel', serif;
+}
+h1 {
+    font-weight: 800;
+}
+h2 {
+    font-weight: 200;
+}
+header {
+    
+    margin-top: 0;
+}
+.forLogo {
+    width: 50%;
+    
+    
+    
+   
+}
+
+nav {
+    /* position: fixed; */
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    
+}
+
+.logo {
+    width: 250px;
+    margin: 20px;
+    /* margin-left: 100px; */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-right: 100px;
+    top: 0;
+    width: 100%;
+    font-size: 30px;  
+    font-weight: 300;      
+}
+
+li {
+    float: right;
+}
+
+li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    margin: 14px;
+}
+a:hover {
+    color: gray;
+}
+
+.primeraPagina {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.imagenPrincipal {
+    width: 1000px;
+    border-radius: 0px 400px;
+}
+.titulo1 {
+    font-size: 70px;
+}
+
+button, .sub1 {
+    width: 100px;
+    height: 50px;
+    border-radius: 50px 0;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(rgb(98, 98, 98), white);
+
+}
+
+button:hover, .sub1:hover {
+    color: gray;
+    background-color: black;
+}
+
+.segundaPagina {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 300px 1fr 300px;
+    grid-template-areas: "subtitulo1 subtitulo1 subtitulo1" "plan1 plan2 plan3" "btn2 btn2 btn2";
+    align-items: center;
+    margin-top: 30px;
+
+    
+}
+
+.subtitulo1 {
+    grid-area: subtitulo1;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.imgg {
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    
+}
+.plan1, .plan2, .plan3, .btn2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.plan1 {
+    grid-area: plan1;
+}
+.plan2 {
+    grid-area: plan2;
+}
+.plan3 {
+    grid-area: plan3;
+}
+.btn2 {
+    grid-area: btn2;
+}
+.ultimaPagina {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form {
+    width: 800px;
+}
+.contacto {
+    font-size: 40px;
+}
+footer {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.volver  {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+.volver:hover {
+    color: gray;
+}
+
+
+/* responsive________________________________________________________________________________________________________________________________________________________________________________________ *
+
+/* .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+
+@media (max-width: 820px) {
+    nav {
+        width: 100%;
+        height: 150px;
+        flex-wrap: wrap;
+        /* position: relative; */
+        align-items: center;
+        justify-content: center; 
+        margin: 0px; 
+        padding: 0px;
+          
+        
+    }
+    .forLogo {
+
+        background: linear-gradient(white, black);
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+        
+
+    }
+  
+
+   
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 50px 0 50px;
+        
+        padding: 0;
+        
+    }
+    li {
+        text-align: right;
+        padding: 9px;
+        margin: 0px;
+        float: right;
+    }
+    ul a {
+        padding: 0;
+        margin: 0px;
+        
+    }
+    .primeraPagina {
+        flex-direction: column;  
+           
+    }
+    .titulo1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .titulo {
+        text-align: center;
+    }
+    
+    .imagenPrincipal {
+        width: 75%;
+    }
+    .lado1 {
+        text-align: center;
+    }
+    .segundaPagina {
+        width: 100%;
+        display: flex;
+        
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitulo1 {
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .ultimaPagina {
+        width: 100%;
+        margin-top: 250px;
+    }
+    /* .plan1 .plan2 .plan3 {
+        width: 300px;
+    } */
+    form {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+@media (max-width: 280px) {
+    nav {
+        width: 100%;
+        height: 150px;
+        flex-wrap: wrap;
+        /* position: relative; */
+        align-items: center;
+        justify-content: center; 
+        margin: 0px; 
+        padding: 0px;
+          
+        
+    }
+    .forLogo {
+
+        background: linear-gradient(white, black);
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+        
+
+    }
+  
+
+   
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 50px 0 50px;
+        
+        padding: 0;
+        
+    }
+    li {
+        text-align: right;
+        padding: 9px;
+        margin: 0px;
+        float: right;
+    }
+    ul a {
+        padding: 0;
+        margin: 0px;
+        
+    }
+    .primeraPagina {
+        flex-direction: column;  
+           
+    }
+    .titulo1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .titulo {
+        text-align: center;
+    }
+    
+    .imagenPrincipal {
+        width: 75%;
+    }
+    .lado1 {
+        text-align: center;
+    }
+    .segundaPagina {
+        width: 100%;
+        display: flex;
+        
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitulo1 {
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .ultimaPagina {
+        width: 100%;
+        margin-top: 1500px;
+    }
+    /* .plan1 .plan2 .plan3 {
+        width: 300px;
+    } */
+    form {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    nav {
+        width: 100%;
+        height: 150px;
+        flex-wrap: wrap;
+        /* position: relative; */
+        align-items: center;
+        justify-content: center; 
+        margin: 0px; 
+        padding: 0px;
+          
+        
+    }
+    .forLogo {
+
+        background: linear-gradient(white, black);
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+        
+
+    }
+  
+
+   
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 50px 0 50px;
+        
+        padding: 0;
+        
+    }
+    li {
+        text-align: right;
+        padding: 9px;
+        margin: 0px;
+        float: right;
+    }
+    ul a {
+        padding: 0;
+        margin: 0px;
+        
+    }
+    .primeraPagina {
+        flex-direction: column;  
+           
+    }
+    .titulo1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .titulo {
+        text-align: center;
+    }
+    
+    .imagenPrincipal {
+        width: 75%;
+    }
+    .lado1 {
+        text-align: center;
+    }
+    .segundaPagina {
+        width: 100%;
+        display: flex;
+        
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitulo1 {
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .ultimaPagina {
+        width: 100%;
+        margin-top: 1500px;
+    }
+    /* .plan1 .plan2 .plan3 {
+        width: 300px;
+    } */
+    form {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+@media (min-width: 900px) {
+    nav {
+        width: 100%;
+        height: 150px;
+        flex-wrap: wrap;
+        /* position: relative; */
+        align-items: center;
+        justify-content: center; 
+        margin: 0px; 
+        padding: 0px;
+          
+        
+    }
+    .forLogo {
+
+        background: linear-gradient(white, black);
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+        
+
+    }
+  
+
+   
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 50px 0 50px;
+        
+        padding: 0;
+        
+    }
+    li {
+        text-align: right;
+        padding: 9px;
+        margin: 0px;
+        float: right;
+    }
+    ul a {
+        padding: 0;
+        margin: 0px;
+        
+    }
+    .primeraPagina {
+        flex-direction: column;  
+           
+    }
+    .titulo1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .titulo {
+        text-align: center;
+    }
+    
+    .imagenPrincipal {
+        width: 75%;
+    }
+    .lado1 {
+        text-align: center;
+    }
+    .segundaPagina {
+        width: 100%;
+        display: flex;
+        
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitulo1 {
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .ultimaPagina {
+        width: 100%;
+        margin-top: 900px;
+    }
+    /* .plan1 .plan2 .plan3 {
+        width: 300px;
+    } */
+    form {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+@media (min-width: 376px)  {
+    nav {
+        width: 100%;
+        height: 150px;
+        flex-wrap: wrap;
+        /* position: relative; */
+        align-items: center;
+        justify-content: center; 
+        margin: 0px; 
+        padding: 0px;
+          
+        
+    } 
+    .forLogo {
+
+        background: linear-gradient(white, black);
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+        
+
+    }
+  
+
+   
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 50px 0 50px;
+        
+        padding: 0;
+        
+    }
+    li {
+        text-align: right;
+        padding: 9px;
+        margin: 0px;
+        float: right;
+    }
+    ul a {
+        padding: 0;
+        margin: 0px;
+        
+    }
+    .primeraPagina {
+        flex-direction: column;  
+           
+    }
+    .titulo1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .titulo {
+        text-align: center;
+    }
+    
+    .imagenPrincipal {
+        width: 75%;
+    }
+    .lado1 {
+        text-align: center;
+    }
+    .segundaPagina {
+        width: 100%;
+        display: flex;
+        
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitulo1 {
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .ultimaPagina {
+        width: 100%;
+        margin-top: 1100px;
+    }
+    
+    form {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+    }
+}
+@media (min-width: 808px)  {
+    nav {
+        width: 100%;
+        height: 150px;
+        flex-wrap: wrap;
+        /* position: relative; */
+        align-items: center;
+        justify-content: center; 
+        margin: 0px; 
+        padding: 0px;
+          
+        
+    } 
+    .forLogo {
+
+        background: linear-gradient(white, black);
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        
+        
+
+    }
+  
+
+   
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 300;
+        margin: 0 50px 0 50px;
+        
+        padding: 0;
+        
+    }
+    li {
+        text-align: right;
+        padding: 9px;
+        margin: 0px;
+        float: right;
+    }
+    ul a {
+        padding: 0;
+        margin: 0px;
+        
+    }
+    .primeraPagina {
+        flex-direction: column;  
+           
+    }
+    .titulo1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .titulo {
+        text-align: center;
+    }
+    
+    .imagenPrincipal {
+        width: 75%;
+    }
+    .lado1 {
+        text-align: center;
+    }
+    .segundaPagina {
+        width: 100%;
+        display: flex;
+        
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitulo1 {
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .ultimaPagina {
+        width: 100%;
+        margin-top: 1350px;
+    }
+    
+    form {
+        width: 100%;
+    }
+    footer {
+        width: 100%;
+        margin-top: 100px;
+    }
+}
+
